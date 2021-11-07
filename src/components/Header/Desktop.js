@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import HeaderLogo from "../../assets/header-logo.png";
 
-const Header = () => {
+const Desktop = () => {
   const [isOpen, setOpen] = useState(false);
 
   return (
@@ -45,4 +45,4 @@ const Header = () => {
   );
 };
 
-export default Header;
+export default Desktop;
