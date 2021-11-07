@@ -50,6 +50,8 @@
   cursor: pointer;
   margin: 0 25px;
   opacity: 0.8;
+  border: none;
+  background: none;
 }
 .planCard:hover {
   opacity: 1;
@@ -84,7 +86,7 @@
   color: #000;
   font-weight: 300;
   z-index: 2;
-  left: 45%;
+  left: calc(50% - 200px);
   border-radius: 10px;
 }
 .oopsModal span {
@@ -315,5 +317,31 @@
   }
   .formButton:hover {
     opacity: 0.8;
+  }
+  .modalSegurosResidencial {
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    top: 15%;
+    width: 600px;
+    height: 600px;
+    background-color: #fff;
+    color: #000;
+    font-weight: 300;
+    z-index: 2;
+    left: calc(50% - 300px);
+    border-radius: 10px;
+    font-size: 24px;
+  }
+  .modalSegurosResidencial button {
+    background: none;
+    border: none;
+    color: #fff;
+    position: absolute;
+    top: -35px;
+    right: 5px;
+    font-size: 26px;
+    cursor: pointer;
   }
 }

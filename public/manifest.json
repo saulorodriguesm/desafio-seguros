@@ -1,6 +1,6 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "short_name": "Desafio Seguros",
+  "name": "POC criada para o Desafio Front-end Seguros do Itaú Unibanco",
   "icons": [
     {
       "src": "favicon.ico",
