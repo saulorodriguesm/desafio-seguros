@@ -24,7 +24,7 @@
   font-weight: 300;
 }
 .sectionContainer {
-  padding: 20px 0;
+  padding: 30px 0;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -43,11 +43,12 @@
 .plans {
   display: flex;
   flex-direction: column;
+  margin-bottom: 50px;
 }
 .planCard {
   position: relative;
   cursor: pointer;
-  margin: 0 15px;
+  margin: 0 25px;
   opacity: 0.8;
 }
 .planCard:hover {
@@ -132,6 +133,72 @@
   margin-bottom: 30px;
 }
 
+.formContainer {
+  background: rgb(239, 233, 229);
+  display: flex;
+  padding: 30px 0;
+}
+.formApp {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 0 15px;
+}
+.formText {
+  display: flex;
+  flex-direction: column;
+  padding-top: 10px;
+}
+.formHeading {
+  font-size: 24px;
+  line-height: 1;
+  font-weight: 300;
+}
+.formSubtext {
+  font-size: 16px;
+  line-height: 1;
+  font-weight: 300;
+  margin-top: 20px;
+}
+.formSectionContainer {
+  display: flex;
+  flex-direction: column;
+}
+.formLabel {
+  font-weight: 300;
+  margin: 5px 0;
+}
+.formInput {
+  margin: 8px 0;
+  max-width: 100%;
+  border: none;
+  border-radius: 10px;
+  height: 50px;
+  padding: 0 10px;
+}
+.formInput:focus-visible {
+  outline-color: rgb(236, 112, 0);
+}
+.formButtonContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  margin-top: 20px;
+  font-weight: 300;
+  font-size: 13px;
+}
+.formButton {
+  background: rgb(236, 112, 0);
+  border: none;
+  border-radius: 5px;
+  color: rgb(239, 233, 229);
+  padding: 10px;
+  font-size: 20px;
+  font-weight: 300;
+  cursor: pointer;
+  text-transform: lowercase;
+  margin-bottom: 10px;
+}
 @media screen and (min-width: 768px) {
   .header {
     background-color: #fff;
@@ -181,6 +248,11 @@
   .plans {
     flex-direction: row;
   }
+  .sectionContainer,
+  .formApp {
+    max-width: 1250px;
+    margin: 0 auto;
+  }
   .sectionTitle {
     font-size: 32px;
     padding: 0;
@@ -211,5 +283,37 @@
     display: flex;
     flex-direction: column;
     margin-right: 40px;
+  }
+  .formApp {
+    display: grid;
+    width: 100%;
+    grid-template-columns: 50% 50%;
+    min-height: 300px;
+  }
+  .formText {
+    display: flex;
+    flex-direction: column;
+    margin-right: 20%;
+    padding-top: 10px;
+  }
+  .formHeading {
+    font-size: 32px;
+    line-height: 1;
+    font-weight: 300;
+  }
+  .formSubtext {
+    font-size: 20px;
+    line-height: 1;
+    font-weight: 300;
+    margin-top: 20px;
+  }
+  .formButtonContainer {
+    max-width: 600px;
+  }
+  .formButton {
+    width: 150px;
+  }
+  .formButton:hover {
+    opacity: 0.8;
   }
 }

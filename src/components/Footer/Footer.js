@@ -1,7 +1,7 @@
 import React from "react";
 import Logo from "../../assets/header-logo.png";
 
-function Footer() {
+const Footer = () => {
   return (
     <div className="footerContainer">
       <div className="footerLogo">
@@ -14,10 +14,10 @@ function Footer() {
         Brasil <b>versão: 2.0</b>
       </div>
       <div className="footerDev">
-        Developed by <b>Saulo Martins</b>
+        Desenvolvido por <b>Saulo Martins</b>
       </div>
     </div>
   );
-}
+};
 
 export default Footer;

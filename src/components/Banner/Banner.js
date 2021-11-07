@@ -1,7 +1,7 @@
 import React from "react";
 import BannerImg from "../../assets/banner.png";
 
-function Banner() {
+const Banner = () => {
   return (
     <div className="bannerContainer">
       <img
@@ -17,6 +17,6 @@ function Banner() {
       </span>
     </div>
   );
-}
+};
 
 export default Banner;

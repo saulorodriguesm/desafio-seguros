@@ -4,7 +4,7 @@ import Plan2 from "../../assets/plan2.png";
 import Plan3 from "../../assets/plan3.png";
 import Plan4 from "../../assets/plan4.png";
 
-function ChooseYourPlan() {
+const ChooseYourPlan = () => {
   return (
     <div className="sectionContainer">
       <div className="sectionTitle">
@@ -56,6 +56,6 @@ function ChooseYourPlan() {
       </div>
     </div>
   );
-}
+};
 
 export default ChooseYourPlan;
