@@ -23,7 +23,7 @@ Para finalizar, o formulário de cotação foi desenvolvido com algumas mudança
 ### Seleção de cobertura 
 Usando o retorno json passado no desafio, foi desenvolvida um componente que traz no front todos os tipos de coberturas disponíveis, onde o cliente pode selecionar qual é o ideal para ele.
 
-## Formulário de cobertura 
+### Formulário de cobertura 
 Foi desenvolvido um segundo formulário, nesse existe uma integração com a API da ViaCep que retorna todos os dados de endereço do usuario através de seu CEP. 
 
 ### Footer 
