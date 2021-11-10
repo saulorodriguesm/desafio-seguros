@@ -6,6 +6,7 @@ import ChooseYourPlan from "./components/ChooseYourPlan/ChooseYourPlan";
 import Form from "./components/Form/Form";
 import Footer from "./components/Footer/Footer";
 import { BrowserView, MobileView } from "react-device-detect";
+import Coverages from "./components/Coverages/Coverages";
 
 function App() {
   return (
@@ -24,6 +25,8 @@ function App() {
       </BrowserView>
       <ChooseYourPlan />
       <Form />
+
+      <Coverages />
       <Footer />
     </div>
   );

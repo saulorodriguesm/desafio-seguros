@@ -344,4 +344,46 @@
     font-size: 26px;
     cursor: pointer;
   }
+  .coverageContainer {
+    max-width: 1350px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+  }
+  .coverageCard {
+    margin: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    background: #fff;
+    height: 300px;
+    width: 300px;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    cursor: pointer;
+  }
+  .coverageCard:hover .coverageName {
+    font-size: 24px;
+  }
+  .coverageName {
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 1;
+    margin-bottom: 10px;
+    min-height: 60px;
+    display: flex;
+    align-items: center;
+  }
+  .coverageDesc {
+    text-overflow: ellipsis;
+    font-weight: 300;
+    line-height: 1.2;
+    font-size: 14px;
+    display: -webkit-box;
+    word-wrap: break-word;
+    -webkit-line-clamp: 5;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
 }
