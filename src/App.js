@@ -7,6 +7,7 @@ import Form from "./components/Form/Form";
 import Footer from "./components/Footer/Footer";
 import { BrowserView, MobileView } from "react-device-detect";
 import Coverages from "./components/Coverages/Coverages";
+import CoverageForm from "./components/Coverages/CoverageForm";
 
 function App() {
   return (
@@ -27,6 +28,8 @@ function App() {
       <Form />
 
       <Coverages />
+
+      <CoverageForm />
       <Footer />
     </div>
   );

@@ -2,6 +2,8 @@ import React, { useState, useEffect } from "react";
 
 const Coverages = () => {
   const [data, setData] = useState();
+  const [selected, setSelected] = useState(false);
+
   const getData = () => {
     fetch("/get_response_ofertas_residencial.json", {
       headers: {
@@ -11,23 +13,19 @@ const Coverages = () => {
     })
       .then((response) => response.json())
       .then(async (data) => {
-        console.log(data.produtos[0].coberturas);
         if (data.produtos[0]) {
           setData(data.produtos[0].coberturas);
         }
-        console.error("not response");
       });
   };
+
   useEffect(() => {
     getData();
   }, []);
 
-  const [select] = useState("");
-
-  const selectedCard = (e) => {
+  const selectedCard = () => {
     const currentState = this?.state;
-    console.log(this);
-    select(!currentState);
+    setSelected(!currentState);
   };
 
   const cards = data?.map(function (cobertura) {
@@ -36,7 +34,7 @@ const Coverages = () => {
         className="coverageCard"
         onClick={() => selectedCard()}
         style={
-          cobertura.cobertura_obrigatoria
+          cobertura.cobertura_obrigatoria || selected
             ? { border: "3px solid rgb(236, 112, 0)" }
             : null
         }
@@ -57,6 +55,9 @@ const Coverages = () => {
       <div className="sectionTitle"> selecione a(s) sua(s) cobertura(s) </div>
       <div className="separator" />
       <div className="coverageContainer">{cards} </div>
+      <div className="coverageButton">
+        <button> continuar </button>
+      </div>
     </div>
   );
 };
