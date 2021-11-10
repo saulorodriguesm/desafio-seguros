@@ -21,6 +21,7 @@ const Coverages = () => {
   useEffect(() => {
     getData();
   }, []);
+
   const [select] = useState("");
 
   const selectedCard = (e) => {
@@ -29,7 +30,7 @@ const Coverages = () => {
     select(!currentState);
   };
 
-  const cardsCoberturas = data?.map(function (cobertura) {
+  const cards = data?.map(function (cobertura) {
     return (
       <button
         className="coverageCard"
@@ -55,7 +56,7 @@ const Coverages = () => {
     <div className="sectionContainer">
       <div className="sectionTitle"> selecione a(s) sua(s) cobertura(s) </div>
       <div className="separator" />
-      <div className="coverageContainer">{cardsCoberturas} </div>
+      <div className="coverageContainer">{cards} </div>
     </div>
   );
 };
